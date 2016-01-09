@@ -10,7 +10,7 @@ Asp.Net 5 Mvc Web Api Backend services has being used.
 
 This application controls the android application [Antalya Emlak Rehberi](https://play.google.com/store/apps/details?id=com.ionicframework.realtyworld762046) and uses Asp.Net 5 Web Api back-end project [here](https://github.com/hamdiceylan/).
 
-AdminLTE had been used as a Management Panel Template, You can check here(https://almsaeedstudio.com/)
+AdminLTE had been used as a Management Panel Template, You can check [here](https://almsaeedstudio.com/)
 
 
 #Licence
