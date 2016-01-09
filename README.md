@@ -8,15 +8,15 @@ Angularjs,Grunt,Bower,Less had been used while developing.
 
 Asp.Net 5 Mvc Web Api Backend services has being used.
 
-This application controls the android application https://play.google.com/store/apps/details?id=com.ionicframework.realtyworld762046 and uses backend project from https://github.com/hamdiceylan/.
+This application controls the android application [Antalya Emlak Rehberi](https://play.google.com/store/apps/details?id=com.ionicframework.realtyworld762046) and uses backend project from https://github.com/hamdiceylan/.
 
 AdminLTE had been used as a Management Panel Template, You can check here(https://almsaeedstudio.com/)
 
 
-[Absolute README link](https://github.com/username/repo/blob/branch/docs/more_words.md)
+#Licence
+[MIT](http://opensource.org/licenses/mit-license.php)
 
 
-Protected by MIT license.
 
 
 
