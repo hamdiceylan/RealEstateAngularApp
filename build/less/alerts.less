@@ -1,0 +1,60 @@
+/*
+ * Component: alert
+ * ----------------
+ */
+
+.alert {
+  .border-radius(3px);
+  h4 {
+    font-weight: 600;
+  }
+  .icon {
+    margin-right: 10px;
+  }
+  .close {
+    color: #000;
+    .opacity(.2);
+    &:hover {
+      .opacity(.5);
+    }
+  }
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+}
+
+//Alert Variants
+.alert-success {
+  &:extend(.bg-green);
+  border-color: darken(@green, 5%);
+}
+.alert-danger,
+.alert-error {
+  &:extend(.bg-red);
+  border-color: darken(@red, 5%);
+}
+.alert-warning {
+  &:extend(.bg-yellow);
+  border-color: darken(@yellow, 5%);
+}
+.alert-info {
+  &:extend(.bg-aqua);
+  border-color: darken(@aqua, 5%);
+}
+
+//Loading indicator
+.waiting-box {
+  display: block;
+  position: fixed; /* fixed position so it doesn't scroll */
+  z-index: 9999; /* on top of everything else */
+  width: 150px;
+  margin-left: -125px; /* horizontally centered */
+  left: 50%;
+  top: 50%; /* displayed on the top of the page, just like Gmail's yellow info-box */
+  height: 60px;
+  padding: 10px;
+  background-color: #3c8dbc;
+  border-radius: 4px;
+  color:#fff;
+}

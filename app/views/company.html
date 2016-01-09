@@ -1,0 +1,35 @@
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Sisteme Kayıtlı Emlak Firmaları</h3>
+                    <div style="float: right;">
+                    <button>Yeni Firma Ekle</button>
+                    </div>
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                    <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+
+                        <div class="row">
+                        <div class="col-sm-12">
+                        <table id="example1" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
+                        <thead>
+                        <tr role="row">
+                            <th>Adı</th>
+                            <th>Telefon</th>
+                            <th>Adres</th>
+                        </thead>
+                        <tbody>
+                        <tr role="row" class="odd" ng-repeat="company in companies">
+                            <td>{{company.Name}}</td>
+                            <td>{{company.Phone}}</td>
+                            <td>{{company.Address}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div><!-- /.box-body -->
+            </div><!-- /.box -->
+        </div><!-- /.col -->
+    </div><!-- /.row -->
+</section>
