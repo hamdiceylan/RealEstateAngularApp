@@ -13,6 +13,9 @@ This application controls the android application https://play.google.com/store/
 AdminLTE had been used as a Management Panel Template, You can check here(https://almsaeedstudio.com/)
 
 
+[Absolute README link](https://github.com/username/repo/blob/branch/docs/more_words.md)
+
+
 Protected by MIT license.
 
 
