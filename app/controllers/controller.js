@@ -19,11 +19,36 @@ angular.module('app.controllers', [])
         });
     })
     .controller('CompanyCtrl', function ($http,$scope) {
-        $http.get(serviceDomain + '/company').
-            then(function(response) {
-                $scope.companies = response.data[0];
-            }, function(response) {
-        });
+
+        $scope.refreshList = function(){
+            $http.get(serviceDomain + '/company/get').
+                then(function(response) {
+                    $scope.companies = response.data[0];
+                }, function(response) {
+                });
+        }
+        $scope.refreshList();
+
+
+        $scope.addCompany = function (newCompany) {
+            console.log(newCompany);
+            var data = { "Name": "3", "Phone": "Test", "Address": "User"};
+            $http.post(serviceDomain +'/company/post',
+                JSON.stringify(newCompany),
+                {
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                }
+            ).success(function (data) {
+                    console.log(data);
+                    if(data == "Success"){
+                        $scope.message = "Firma Başarılı bir şekilde eklendi.";
+                    }
+                    $scope.refreshList();
+                });
+
+        }
 
     })
     .controller('UsersCtrl', function ($http,$scope) {
