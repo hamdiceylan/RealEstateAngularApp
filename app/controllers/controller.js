@@ -31,8 +31,8 @@ angular.module('app.controllers', [])
 
 
         $scope.addCompany = function (newCompany) {
+            $scope.toggleModal();
             console.log(newCompany);
-            var data = { "Name": "3", "Phone": "Test", "Address": "User"};
             $http.post(serviceDomain +'/company/post',
                 JSON.stringify(newCompany),
                 {
@@ -50,6 +50,11 @@ angular.module('app.controllers', [])
 
         }
 
+        $scope.showModal = false;
+        $scope.toggleModal = function(){
+            $scope.showModal = !$scope.showModal;
+        };
+
     })
     .controller('UsersCtrl', function ($http,$scope) {
         $http.get(serviceDomain + '/userData/get').
@@ -65,4 +70,6 @@ angular.module('app.controllers', [])
             }, function(response) {
             });
     });
+
+
 
